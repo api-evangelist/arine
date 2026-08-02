@@ -1,0 +1,87 @@
+generated: '2026-08-02'
+method: searched
+source: https://blog.arine.io/hitrust
+docs: https://www.arine.io/our-approach
+note: >-
+  Arine publishes no machine-readable API contract, so no standard below can be
+  derived from a specification. Every entry is either a published, sourced claim
+  by Arine or an honest negative recorded from probing. Absence of evidence is
+  recorded as conforms: false with no evidence, not as a failure.
+standards:
+- id: hitrust-csf-r2
+  name: HITRUST Risk-based, 2-year (r2) Certification
+  conforms: true
+  scope: Arine Platform residing within Amazon Web Services Data Centers
+  announced: '2024-07-30'
+  evidence: https://blog.arine.io/hitrust
+- id: hipaa
+  name: HIPAA
+  conforms: true
+  evidence: >-
+    Arine is a healthcare technology vendor processing pharmacy and medical claims
+    data for health plans and providers; HITRUST r2 certification is scoped to
+    HIPAA-regulated protected health information. See https://blog.arine.io/hitrust
+    and https://www.arine.io/privacy-policy
+- id: soc2
+  name: SOC 2
+  conforms: false
+  evidence: null
+  note: No SOC 2 attestation published on any Arine public page as of 2026-08-02.
+- id: iso-27001
+  name: ISO/IEC 27001
+  conforms: false
+  evidence: null
+- id: oauth2
+  name: OAuth 2.0
+  conforms: false
+  evidence: null
+  note: >-
+    api.arine.io returns 403 to all anonymous callers and publishes no
+    /.well-known/oauth-authorization-server or /.well-known/oauth-protected-resource
+    metadata, so no OAuth posture can be verified. docs.arine.io itself authenticates
+    readers via a Document360 OIDC flow (identity.us.document360.io), but that is the
+    vendor's portal login, not an Arine API authorization server.
+- id: oidc
+  name: OpenID Connect
+  conforms: false
+  evidence: null
+- id: fhir-r4
+  name: HL7 FHIR R4
+  conforms: false
+  evidence: null
+  note: No FHIR endpoint, capability statement or interoperability claim published.
+- id: ncpdp
+  name: NCPDP SCRIPT / Telecommunication
+  conforms: false
+  evidence: null
+  note: Arine describes ingesting pharmacy and medical claims data but names no
+    standard for it publicly.
+- id: rfc9116-security-txt
+  name: RFC 9116 security.txt
+  conforms: false
+  evidence: well-known/arine-well-known.yml
+- id: rfc9457-problem-details
+  name: RFC 9457 Problem Details
+  conforms: false
+  evidence: null
+- id: a2a
+  name: A2A Agent Card
+  conforms: false
+  evidence: well-known/arine-well-known.yml
+- id: mcp
+  name: Model Context Protocol
+  conforms: false
+  evidence: null
+- id: dnssec
+  name: DNSSEC
+  conforms: true
+  evidence: security/arine-domain-security.yml
+- id: dmarc
+  name: DMARC
+  conforms: true
+  policy: quarantine
+  evidence: security/arine-domain-security.yml
+- id: caa
+  name: DNS CAA
+  conforms: false
+  evidence: security/arine-domain-security.yml

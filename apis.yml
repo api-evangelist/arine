@@ -1,17 +1,37 @@
 aid: arine
 name: Arine
-description: 'Arine is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Arine is a San Francisco-based healthcare technology company that operates
+  an AI-driven medication intelligence and comprehensive medication management platform
+  for health plans, government payors and risk-bearing provider organizations. The
+  platform ingests pharmacy and medical claims, clinical, cost, quality, behavioral
+  and social-determinants-of-health data, then applies machine learning and clinical
+  decision logic to surface medication-related gaps in care and generate targeted,
+  just-in-time interventions, member education materials and prescriber communications.
+  Arine packages this as four solutions — LUMINATE (high-risk member management),
+  RESONATE (prescriber analytics), ELEVATE (Star Ratings and quality improvement)
+  and ELEVATE MTM (medication therapy management) — delivered as a SaaS portal running
+  in AWS. The Arine Platform holds HITRUST Risk-based 2-year (r2) certification. Arine
+  ships no public developer program: its API gateway at api.arine.io is closed to
+  anonymous callers and its product documentation portal at docs.arine.io sits behind
+  customer authentication, so no machine-readable API contract is publicly available.'
+image: https://www.arine.io/hubfs/Arine%20Logos%20and%20Icons/Brand%20Marks/Favicon.png
 url: https://raw.githubusercontent.com/api-evangelist/arine/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
 - Company
+- Health Care
+- Medication Management
+- Pharmacy
+- Artificial Intelligence
+- Clinical Decision Support
+- Health Plans
+- Population Health
+- Value Based Care
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +40,42 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://www.arine.io/
+- type: Documentation
+  url: https://docs.arine.io/
+  x-access: authenticated
+- type: Blog
+  url: https://blog.arine.io/
+- type: BlogRSS
+  url: https://blog.arine.io/rss.xml
+- type: Support
+  url: https://arine.freshdesk.com/support/tickets/new
+- type: Login
+  url: https://app.arine.io/accounts/login/
+- type: TermsOfService
+  url: https://www.arine.io/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.arine.io/privacy-policy
+- type: Compliance
+  url: https://blog.arine.io/hitrust
+- type: Conformance
+  url: conformance/arine-conformance.yml
+- type: DomainSecurity
+  url: security/arine-domain-security.yml
+- type: LLMsTxt
+  url: llms/arine-llms.txt
+- type: ContactUs
+  url: https://www.arine.io/contact-us
+- type: Careers
+  url: https://www.arine.io/careers
+- type: Demo
+  url: https://go.arine.io/request-a-demo
+- type: SecondaryMarket
   url: https://forgeglobal.com/arine_stock/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/arinehealth
+x-enrichment:
+  date: '2026-08-02'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
