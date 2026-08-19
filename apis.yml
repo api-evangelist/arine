@@ -18,7 +18,7 @@ image: https://www.arine.io/hubfs/Arine%20Logos%20and%20Icons/Brand%20Marks/Favi
 url: https://raw.githubusercontent.com/api-evangelist/arine/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
