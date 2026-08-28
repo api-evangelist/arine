@@ -14,6 +14,17 @@ description: 'Arine is a San Francisco-based healthcare technology company that 
   ships no public developer program: its API gateway at api.arine.io is closed to
   anonymous callers and its product documentation portal at docs.arine.io sits behind
   customer authentication, so no machine-readable API contract is publicly available.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.arine.io/hubfs/Arine%20Logos%20and%20Icons/Brand%20Marks/Favicon.png
 url: https://raw.githubusercontent.com/api-evangelist/arine/refs/heads/main/apis.yml
 x-type: company
