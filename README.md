@@ -64,39 +64,85 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Arine is a San Francisco-based healthcare technology company operating an AI-driven medication
-intelligence and comprehensive medication management platform for health plans, government payors
-and risk-bearing provider organizations. Its four solutions are LUMINATE (high-risk member
-management), RESONATE (prescriber analytics), ELEVATE (quality and Star Ratings improvement) and
-ELEVATE MTM (medication therapy management).
+Arine is a San Francisco-based healthcare technology company that operates an AI-driven medication intelligence and comprehensive medication management platform for health plans, government payors and risk-bearing provider organizations. The platform ingests pharmacy and medical claims, clinical, cost, quality, behavioral and social-determinants-of-health data, then applies machine learning and clinical decision logic to surface medication-related gaps in care and generate targeted, just-in-time interventions, member education materials and prescriber communications. Arine packages this as four solutions — LUMINATE (high-risk member management), RESONATE (prescriber analytics), ELEVATE (Star Ratings and quality improvement) and ELEVATE MTM (medication therapy management) — delivered as a SaaS portal running in AWS. The Arine Platform holds HITRUST Risk-based 2-year (r2) certification. Arine ships no public developer program: its API gateway at api.arine.io is closed to anonymous callers and its product documentation portal at docs.arine.io sits behind customer authentication, so no machine-readable API contract is publicly available.
 
-- Website: https://www.arine.io/
-- Blog and resources: https://blog.arine.io/
-- Documentation portal (authentication required): https://docs.arine.io/
-- Secondary-market listing: https://forgeglobal.com/arine_stock/
+**Areas:** Company · Healthcare · Medication Management · Pharmacy · Artificial Intelligence · Clinical Decision Support · Health Plans · Population Health · Value-Based Care · Software-as-a-Service
 
-## API posture
+## Arine on APIs.io
 
-Arine ships **no public developer program and no publicly available machine-readable API contract**.
-Verified by probe on 2026-08-02:
+Everything profiled for Arine is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/arine/](https://apis.io/providers/arine/)** — or go straight to one of the APIs or properties below.
 
-- `https://api.arine.io` is an AWS API Gateway that returns HTTP 403 `ForbiddenException` on every
-  probed path, including `/openapi.json`, `/swagger.json`, `/graphql`, `/api-docs` and `/.well-known/*`.
-- `https://docs.arine.io` is a Document360 knowledge base with `projectProtectionLevel: 1`; every path
-  302-redirects to an OIDC login.
-- No OpenAPI, Swagger, GraphQL SDL, AsyncAPI, MCP server, A2A agent card, `security.txt`, SDK, CLI,
-  Postman collection or public changelog was found on any Arine host or in npm / PyPI.
+### Published properties
 
-Full probe transcript: [`well-known/arine-well-known.yml`](well-known/arine-well-known.yml).
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Artifacts
+#### Security (1)
 
-| Artifact | File |
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Arine Domain Security](https://apis.io/security/arine/arine-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.arine.io/)
+- [Documentation](https://docs.arine.io/)
+- [Support](https://arine.freshdesk.com/support/tickets/new)
+- [Blog](https://blog.arine.io/)
+- [Compliance](https://blog.arine.io/hitrust)
+- [Terms of service](https://www.arine.io/terms-and-conditions)
+- [Privacy policy](https://www.arine.io/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 17.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| Conformance / compliance posture | `conformance/arine-conformance.yml` |
-| Domain security (TLS/HSTS/DNSSEC/CAA/SPF/DMARC) | `security/arine-domain-security.yml` |
-| Well-known + contract discovery probe | `well-known/arine-well-known.yml` |
-| llms.txt | `llms/arine-llms.txt` |
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 35.5 |
 
-Arine holds HITRUST Risk-based, 2-year (r2) certification for the Arine Platform running in AWS
-(<https://blog.arine.io/hitrust>).
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 17.6** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/arine/](https://apis.io/providers/arine/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Arine: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/arine/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
